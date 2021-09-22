@@ -16,5 +16,10 @@ public class Demo1 {
 			System.out.println(arr[i]);
 		}
 		
+		
+		           // collection,array,DBResultSet
+		for (int data : arr) {
+			System.out.println(" "+data);
+		}
 	}
 }
