@@ -1,0 +1,31 @@
+Implement the following requirement
+Note :- You cannot change the structure of the code.
+
+public class ArraysWork {
+
+	int arr[] = {15,19,6,3,74,84,62,100,20,38,415,3,74,16,15,9,650,67};
+	
+	
+	public _____ getRepeatedValues()
+	{
+		// code to return arr[] containing only duplicate values, such as 15,3 etc
+	}
+	
+	public short getSum()
+	{
+		// code to return the total of all values;
+	}
+	
+	public static _______ getUniqueValues()
+	{
+		// code to return arr[] containing all unique values only;
+	}
+	
+}
+
+public class ArrayMainClass {
+
+	public static void main(String[] args) {
+		 // call methods of ArraysWork class
+	}
+}
