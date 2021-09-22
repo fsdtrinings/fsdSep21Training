@@ -28,14 +28,6 @@ public class UserCode {
 		
 	}
 	
-	public static void printSalaryBreakUp()
-	{
-		System.out.println(" Basic Salary ");
-		System.out.println(" HRA :- ");
-		System.out.println("DA :- ");
-		System.out.println(" Gross Salary :- ");
-		System.out.println(" Tax Amount :- ");
-		System.out.println(" Net Salary :- ");
-	}
+	
 
 }
