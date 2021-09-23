@@ -1,0 +1,39 @@
+public class Device {
+
+	private String deviceName;
+	private String modelNumber; // as Id , should be auto-generated combination of char or numbers (6 chars) 
+	// such as abc123 , xyz343, bjb543 
+	private int cost;
+	private int avgRating;
+  private String brandName
+	
+	public Device(String deviceName, int cost, int avgRating,String brandName) {
+		this.deviceName = deviceName;
+		this.cost = cost;
+		this.avgRating = avgRating;
+    this.brandName = brandName;
+	} 
+	
+	
+}//end class
+
+based on the above class , implements following User Operations
+
+1) Add New Device
+2) Search Device based on ModelNumber
+3) Print All Devices
+4) Print Devices within Price Range (entered by user)
+5) Filter Device based on Price Range and BrandName
+   5.b) Apply avgRating filter on Filtered Devices.
+6) Exit
+
+
+Note :- 
+A) 
+Inorder to compare String use below code (use equals())
+if(searchedBrandName.equals("Dell"))
+{
+}
+
+B) Implement code in proper saperation of logic , follow MVC Design Pattern
+
