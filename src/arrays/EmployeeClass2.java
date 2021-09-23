@@ -1,5 +1,7 @@
 package arrays;
 
+import arr.day2.Employee;
+
 public class EmployeeClass2 {
 
 	public void doThings(Employee arr[])
