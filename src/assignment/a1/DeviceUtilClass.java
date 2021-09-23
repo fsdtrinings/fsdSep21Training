@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class DeviceUtilClass {
 
+	public static void main(String[] args) {
+		getRandomModelNumber();
+	}
 	public static String getRandomModelNumber()
 	{
 		String modelNumber = "";
@@ -24,6 +27,7 @@ public class DeviceUtilClass {
 			
 			charCount++;
 		}while(charCount<6);
+		System.out.println(modelNumber);
 		return modelNumber;
 	}
 	
@@ -31,17 +35,10 @@ public class DeviceUtilClass {
 	
 	public static char getRandomChar()
 	{
-		char ch = '-';
-		while(true)
-		{
-			int x = new Random().nextInt(91); // 
-			System.out.println(" x:- "+x);
-			if(x>=65 && x<=90) 
-			{
-				ch = (char)x;
-				break;
-			}
-		}
+		char ch = 'a';
+			
+		int x = new Random().nextInt(91);
+		ch = (x>=65 && x<=90)?(char)x:getRandomChar(); 
 		
 		return ch;
 	}
