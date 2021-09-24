@@ -1,0 +1,24 @@
+Based on the Device class , implements following requirements
+
+1)	Provide switchOn() and switchOff() abstract behaviour in Device class.
+2)	Provide Battery to all Devices.
+3)	Create Battery class with following properties and requirements
+        a.	Int MAX_POWER; 
+        b.	Int currentPower; // gives us the remaining power left in the battery 
+        c.	Add non abstract functionality like plugin(); 
+                 //which increases the currentPower
+
+4)	Create few interfaces like Wifi or Bluetooth and implements functionalities in sub classes.
+
+5)	Create following different types of devices 
+        a.	MobilePhone 
+             (behaviour is calling , gaming , videoCalling() using wifi , fileTransfer() using Bluetooth )
+        b.	Laptop
+             (behaviour is doProcessing() ,  webSurfing() using wifi , fileTransfer() using bluetooth )
+        c.	Camera (non wifi/non Bluetooth enabled) ,
+             ( behaviour is like takePhotos() , videomaking())
+        d.	Printer (behaviour is printout(), scanning())
+        e.	Speaker  (behaviour playMusic(), connect with Bluetooth() )
+
+
+Note : create appropriate class structure and display the value of power (based on any calculation, which varies device to device) and print relevant statements
