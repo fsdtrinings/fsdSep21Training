@@ -1,0 +1,6 @@
+Create Cusstom Exception 
+  InvalidCountryException
+  
+  
+  Valid countries are "India,Nepal,Bhutan,Srilanaka"
+WRT to exception handling code , present in exc package
