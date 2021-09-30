@@ -50,26 +50,6 @@ public class Demo2 {
 			System.out.println("--------------");
 		}
 		
-		System.out.println("\n\n\n 2nd approach ");
-		// approach 2 
-		
-		Object arr[] = list.toArray();
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
-			System.out.println("--------------");
-		}
-		
-		System.out.println("\n\n\n 3rd approach based on OOPS , Iterator");
-		// approach 2 
-		
-		
-		Iterator<?> itr = list.iterator();
-		while(itr.hasNext())
-		{
-			String str = (String)itr.next();
-			System.out.println(str);
-			System.out.println("----------------------");
-		}
 		
 	}
 
