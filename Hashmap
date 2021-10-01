@@ -1,0 +1,25 @@
+SELF LEARNING TASK
+
+1) Learn HashMap byself and implement following
+2)	HashMap <Integer,Device> 
+3)  Write code to iterate Hashmap based on Iterator 
+4) Write code to iterate Hashmap based on forEach loop
+
+example
+
+    HashMap<Integer, Employee> map = new HashMap<>();
+		map.put(1, new Employee(101,"Ramesh",2000));
+		map.put(2, new Employee(101,"Ramesh",2000));
+		map.put(3, new Employee(101,"Ramesh",2000));
+		
+		Iterator<Integer> itr = map.keySet().iterator();
+		// extract key set from map key
+		
+		while(itr.hasNext())
+		{
+			int key = itr.next();
+			Employee value = map.get(key);
+			
+			// ... rest of the code
+			
+		}
