@@ -1,6 +1,8 @@
 package obj;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HRApp {
 
@@ -62,4 +64,25 @@ public class HRApp {
 		}
 	}
 
+	
+	public static void insertIntoHashMap()
+	{
+		HashMap<Integer, Employee> map = new HashMap<>();
+		map.put(1, new Employee(101,"Ramesh",2000));
+		map.put(2, new Employee(101,"Ramesh",2000));
+		map.put(3, new Employee(101,"Ramesh",2000));
+		
+		Iterator<Integer> itr = map.keySet().iterator();
+		// extract key set from map key
+		
+		while(itr.hasNext())
+		{
+			int key = itr.next();
+			Employee value = map.get(key);
+			
+			// ... rest of the code
+			
+		}
+		
+	}
 }

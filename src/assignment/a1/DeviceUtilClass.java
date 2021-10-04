@@ -27,7 +27,7 @@ public class DeviceUtilClass {
 			
 			charCount++;
 		}while(charCount<6);
-		System.out.println(modelNumber);
+	//	System.out.println(modelNumber);
 		return modelNumber;
 	}
 	
