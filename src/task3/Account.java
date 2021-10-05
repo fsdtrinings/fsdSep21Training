@@ -1,6 +1,6 @@
 package task3;
 
-abstract public class Account {
+public class Account implements Comparable<Account>{
 
 	private String accountHolderName;
 	private int accountid;
@@ -42,11 +42,53 @@ abstract public class Account {
 		return balance;
 	}
 	
-	public abstract int doWithdrawal(int amount);
+	public int doWithdrawal(int amount) {
+		return 10;
+	}
 
 	@Override
 	public String toString() {
 		return accountid+" - "+accountHolderName+" - "+balance;
+	}
+
+	@Override
+	public int hashCode() {
+		System.out.println("Inside hashcode "+accountHolderName);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((accountHolderName == null) ? 0 : accountHolderName.hashCode());
+		result = prime * result + accountid;
+		result = prime * result + balance;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		System.out.println("inside equals :- "+accountHolderName);
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Account other = (Account) obj;
+		if (accountHolderName == null) {
+			if (other.accountHolderName != null)
+				return false;
+		} else if (!accountHolderName.equals(other.accountHolderName))
+			return false;
+		if (accountid != other.accountid)
+			return false;
+		if (balance != other.balance)
+			return false;
+		return true;
+	}
+
+	@Override
+	public int compareTo(Account o) {
+		// TODO Auto-generated method stub
+		System.out.println("inside compareTo "+this.accountHolderName);
+		return this.balance - o.getBalance();
 	}
 	
 	

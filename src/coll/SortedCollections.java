@@ -41,16 +41,27 @@ public class SortedCollections {
 		
 		
 		
-		
+		print(list, "Without soting");
 		
 	}
-	
-	public static void print(List<Device> list, String tagLine)
+	                           //  ? super Device :- allows to add in the list
+	public static void print(List<? extends Device> list, String tagLine)
 	{
 		System.out.println("\n\n\n ============="+tagLine+"===================");
 		for (Device device : list) {
 			System.out.println(device);
 		}
 	}
+	
+	
 
 }
+
+
+
+
+
+
+
+
+
