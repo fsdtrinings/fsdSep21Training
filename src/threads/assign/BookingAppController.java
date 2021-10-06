@@ -9,7 +9,7 @@ public class BookingAppController {
 	
 	public BookingAppController() {
 		arr = new Seat[10];
-		for (int i = 0; i < 40; i++) {
+		for (int i = 0; i < 10; i++) {
 			arr[i] = new Seat(i++, false);
 		}
 	}
