@@ -55,7 +55,6 @@ public class MainRunner {
 	
 	public static void displayMaxsumAssuredAmount()
 	{
-		System.out.println("\n\n\n ------- inside max sa details ---");
 		Comparator<Policy> policyMaxComprator = (pol1,pol2)->pol1.getSumAssuredAmount()-pol2.getSumAssuredAmount();
 		Map<Account, Integer> maxSAMap = new HashMap<>();
 		
@@ -64,12 +63,11 @@ public class MainRunner {
 			maxSAMap.put(a, maxPolicy.getSumAssuredAmount());
 		});
 		
-		System.out.println(maxSAMap);
 		Comparator<Map.Entry<Account, Integer>> saComp = (entry1,entry2)->entry1.getValue().compareTo(entry2.getValue());
 		
 		
 		Entry<Account,Integer> entry =  maxSAMap.entrySet().stream().max(saComp).get();
-		System.out.println(" Max Sum Assured Account Details ");
+		System.out.println("\n\n ====Max Sum Assured Account Details====");
 		System.out.println(entry.getKey());
 		System.out.println(entry.getValue());
 		
