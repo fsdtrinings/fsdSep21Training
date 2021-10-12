@@ -6,5 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/ashis/OneDrive/Desktop/RupiPay Batch/MyBarCode.jar"/>
+	<classpathentry kind="lib" path="D:/Ashish/jars/mysql-connector-java-8.0.25.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,7 @@
+Steps
+
+1) Add Jar File 
+2) create DBConfig file :- responsible for DB Connection 
+3) DB manipulation class (class for SQL Queries)
+4) Business Operation class
+5) User Interaction class
