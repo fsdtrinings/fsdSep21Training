@@ -5,8 +5,16 @@ New Requirements
 -------------------------------------------------------------------------------------------------------------------------------------
 
 1) Client will get Cashback of 0.05% on every fund transfer.
+    In order to get provide the cash back .
+    Perform two operations 
+    1) Increase Wallet Balance of the receiver.
+    2) Decrease Wallet Balance of the Payee + cash back 
+    Note :- Perform this task within JDBC transactions
+    
 2) Add functionality to (transfer fund from wallet to Bank), which decrease the entered amount from the wallet and credited in the bank account 
   (Note:- Just record the transaction that XYZ user transfered amount to bank on this date)
+  
+  
 3) Provide 0.75% extra monthly cash back to all user those maintain 10,000 Rs Avg monthly balance.
 
 
