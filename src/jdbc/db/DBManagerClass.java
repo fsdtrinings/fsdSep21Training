@@ -83,7 +83,48 @@ public class DBManagerClass {
 		return accounts;
 	}
 	
-	
+	public boolean doTransaction()throws Exception
+	{
+		int agentid = 1;
+		int newWalletBalance = 50300; // after logic 
+		String q1 = "update rapipay.agent set walletbalance = ? where agentId = ?";
+		
+		int clientId = 70;
+		int newWalletBalanct_Client = 200;
+		String q2 = "update rapipay.client set walletbalance = ? where cleintId  = ?";
+		
+		
+		con.setAutoCommit(false);
+		
+		try {
+			PreparedStatement ps1 = con.prepareStatement(q1);
+			ps1.setInt(1, newWalletBalance);
+			ps1.setInt(2, agentid);
+			
+			PreparedStatement ps2 = con.prepareStatement(q2);
+			ps2.setInt(1, newWalletBalanct_Client);
+			ps2.setInt(2, clientId);
+			
+			int i1 = ps1.executeUpdate();
+			int i2 = ps2.executeUpdate();
+			
+			
+			con.commit();
+			con.setAutoCommit(true);
+			
+			return i1==1 & i2 ==1;
+		
+		} catch (Exception e) {
+			con.rollback();
+		}
+		
+	return false;
+		
+	}
 	
 
+	
+	
+	
+	
 }
