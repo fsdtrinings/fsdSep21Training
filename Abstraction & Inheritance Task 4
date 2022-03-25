@@ -1,4 +1,6 @@
-Based on the Device class , implements following requirements
+Based on the Device class
+https://github.com/fsdtrinings/fsdSep21Training/blob/main/Arrays_Task_3
+implements following requirements
 
 1)	Provide switchOn() and switchOff() abstract behaviour in Device class.
 2)	Provide Battery to all Devices.
